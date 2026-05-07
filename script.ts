@@ -862,32 +862,32 @@
 //   console.log(`Part: ${item.part}, Price: ${item.price}, In Stock: ${item.inStock}`)
 // })
 
-class Component {
-  constructor (
-    public part: string,
-    public price: number,
-  ) {}
+// class Component {
+//   constructor (
+//     public part: string,
+//     public price: number,
+//   ) {}
 
-  info () {
-    console.log(`Part: ${this.part}, Price: ${this.price}`)
-  }
+//   info () {
+//     console.log(`Part: ${this.part}, Price: ${this.price}`)
+//   }
 
-  discount (precent: number) {
-    this.price = this.price * precent
-    console.log(`${this.part} Discounted by ${precent}%!, New Price: ${this.price}`)
-  }
-}
+//   discount (precent: number) {
+//     this.price = this.price * precent
+//     console.log(`${this.part} Discounted by ${precent}%!, New Price: ${this.price}`)
+//   }
+// }
 
-class GPU extends Component {
-  constructor (public part: string, public price: number, public inStock: boolean) {
-    super(part, price)
-  }
+// class GPU extends Component {
+//   constructor (public part: string, public price: number, public inStock: boolean) {
+//     super(part, price)
+//   }
 
-  info () {
-    super.info()
-    console.log(`In Stock: ${this.inStock ? "Yes" : "No"}`)
-  }
-}
+//   info () {
+//     super.info()
+//     console.log(`In Stock: ${this.inStock ? "Yes" : "No"}`)
+//   }
+// }
 
-const gpu1 = new GPU("RTX 4090", 1600, true)
-gpu1.discount(10)
+// const gpu1 = new GPU("RTX 4090", 1600, true)
+// gpu1.discount(10)
